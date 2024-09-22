@@ -195,7 +195,15 @@
 		marker12.bindTooltip("The Nest is NEIU's first student dormitory." + '<br>' + pic12);
 		p4.bindTooltip("This is the main Parking Facility." + '<br>' + pic13);
 		
-		
+		  var title = L.control({position: 'topright'}); // position of the title
+
+		title.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'title'); // create a div with a class "title"
+			this._div.innerHTML = "<h3>Map of Northeastern Illinois University</h3>";  // Title text, may use html to customize
+			return this._div;
+		};
+
+		title.addTo(map);		
 		
         </script>
 		<p>Icons created by self</p>
