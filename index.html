@@ -38,13 +38,13 @@
 
           var map = L.map('map', {
               center: [41.98043174255184, -87.71831881042631],
-              zoom: 17
+              zoom: 16
           });
 
          L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>',
                maxZoom: 18,
-               minZoom: 16
+               minZoom: 15
             }).addTo(map);
 			
 		var bbh = L.icon({
